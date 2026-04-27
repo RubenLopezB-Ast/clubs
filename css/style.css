@@ -2932,4 +2932,43 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+/* ===== HERO MÓVIL ===== */
+.hero-mobile {
+  display: none;
+}
+
+/* SOLO MÓVIL */
+@media (max-width: 768px) {
+
+  .hero-mobile {
+    display: block;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+  }
+
+  .hero-mobile h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .hero-mobile p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .hero-mobile .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #featured .camera_wrap {
+    display: none;
+  }
+}
+
 
