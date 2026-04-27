@@ -3212,3 +3212,370 @@ footer h5 {
   }
 
 }
+
+/* ===== TARJETAS TIPO NETFLIX ===== */
+
+.card-club {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card-club:hover {
+  transform: scale(1.03);
+}
+
+/* Imagen */
+.card-club img {
+  height: 220px;
+  object-fit: cover;
+  object-position: top; /* 🔥 muestra la parte de arriba */
+}
+
+/* Contenido */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h4 {
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* ===== MÓVIL ===== */
+@media (max-width: 768px) {
+
+  .card-club {
+    margin-bottom: 20px;
+  }
+
+  .card-club img {
+    height: 180px;
+  }
+
+}
+
+/* ===== TARJETAS MISMO TAMAÑO ===== */
+
+/* ===== IMÁGENES UNIFORMES ===== */
+
+.card-club img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenedor padre */
+#clubes .span4 {
+  display: flex;
+}
+
+/* Imagen tamaño fijo */
+.card-club img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contenido ocupa todo */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* Botón siempre abajo */
+.card-content a {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .card-club img {
+    height: 180px;
+  }
+}
+
+/* ===== FILA DE TARJETAS IGUAL ALTURA ===== */
+
+#clubes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#clubes .span4 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Tarjeta ocupa todo */
+.card-club {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Contenido crece */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Botón abajo del todo */
+.card-content a {
+  margin-top: auto;
+}
+
+.card-content p {
+  min-height: 50px;
+}
+
+/* ===== FIX DEFINITIVO TARJETAS ===== */
+
+#clubes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#clubes .span4 {
+  display: flex;
+}
+
+.card-club {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Imagen fija */
+.card-club img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenido estructurado */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* 🔥 CLAVE: alturas iguales internas */
+.card-content h4 {
+  min-height: 48px;
+}
+
+.card-content p {
+  min-height: 60px;
+}
+
+/* Botón siempre abajo */
+.card-content a {
+  margin-top: auto;
+}
+
+/* ===== RESET GRID PARA TARJETAS ===== */
+
+#clubes .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+#clubes .span4 {
+  float: none !important;
+  display: flex !important;
+  width: 33.33% !important;
+}
+
+/* ===== TARJETAS PERFECTAS ===== */
+
+.card-club {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen fija SIEMPRE */
+.card-club img {
+  height: 220px !important;
+  object-fit: cover !important;
+}
+
+/* Contenido */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* 🔥 CLAVE REAL */
+.card-content h4 {
+  min-height: 50px;
+}
+
+.card-content p {
+  min-height: 70px;
+}
+
+/* Botón abajo */
+.card-content a {
+  margin-top: auto;
+}
+
+#clubes .span4 {
+  margin-left: 0 !important;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+#clubes .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 🔥 separación entre tarjetas */
+}
+
+#clubes .span4 {
+  flex: 1;
+  margin-left: 0 !important;
+}
+
+@media (max-width: 768px) {
+
+  .card-content p,
+  .card-content a {
+    display: none;
+  }
+
+}
+
+#clubes .span4 {
+  padding: 10px; /* 🔥 crea espacio alrededor */
+  box-sizing: border-box;
+}
+
+footer {
+  clear: both;
+}
+
+.pricing-box-wrap {
+  max-width: 420px;
+  margin: 60px auto; /* 🔥 centrado */
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.pricing-box-wrap h3,
+.pricing-box-wrap h4,
+.pricing-box-wrap p {
+  color: white;
+}
+
+.pricing-box-wrap .btn {
+  background: white;
+  color: #27ae60;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 14px;
+  width: 100%;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+}
+
+.pricing-box-wrap .btn:hover {
+  transform: scale(1.05);
+  background: #f8f8f8;
+}
+
+.pricing-box-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-box-wrap::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .pricing-box-wrap {
+    margin: 40px 15px;
+  }
+}
+
+.pricing-box-wrap {
+  max-width: 420px;
+  margin: 60px auto !important; /* 🔥 esto la centra de verdad */
+  float: none !important;
+}
+
+/* ===== TARJETA SUSCRIPCIÓN CENTRADA ===== */
+
+.pricing-box-wrap {
+  max-width: 420px;
+  margin: 60px auto;
+  display: block;
+  text-align: left;
+}
+
+.pricing-box-wrap p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.pricing-box-wrap .btn {
+  display: block;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.pricing-box-wrap * {
+  text-align: left;
+}
+

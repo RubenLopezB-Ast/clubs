@@ -42,8 +42,11 @@
 
     <!-- LOGO -->
     <div class="logo">
-      <a href="index.html">Tus Clubs</a>
-    </div>
+  <a href="index.html">
+    <img src="img/logoN.png" alt="Tus Clubs">
+    <span>Tus Clubs</span>
+  </a>
+</div>
 
     <!-- BOTÓN HAMBURGUESA (solo móvil) -->
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -195,42 +198,40 @@
 </div>
 
 <div class="row">
+<div class="row" id="clubes">
 
+  <!-- CLUB LECTURA -->
   <div class="span4">
-    <div class="box flyLeft">
-      <div class="icon">
-        <i class="ico icon-circled icon-bgdark icon-book active icon-3x"></i>
-      </div>
-      <div class="text">
-        <h4>Club de <strong>Lectura</strong></h4>
-        <p>Sesiones mensuales sobre libros seleccionados por autores.</p>
-        <a href="#">Ver sesiones</a>
+    <div class="card-club">
+      <img src="img/clectura.png" alt="Club lectura">
+      <div class="card-content">
+        <h4>Club de Lectura</h4>
+        <p>Descubre libros como El Principito y comparte opiniones.</p>
+        <a href="#" class="btn btn-success">Entrar</a>
       </div>
     </div>
   </div>
 
+  <!-- CLUB MÚSICA -->
   <div class="span4">
-    <div class="box flyIn">
-      <div class="icon">
-        <i class="ico icon-circled icon-bgdark icon-music active icon-3x"></i>
-      </div>
-      <div class="text">
-        <h4>Club de <strong>Música</strong></h4>
-        <p>Descubre álbumes, artistas y comparte opiniones.</p>
-        <a href="#">Explorar música</a>
+    <div class="card-club">
+      <img src="img/CMusica.png" alt="Club música">
+      <div class="card-content">
+        <h4>Club de Música</h4>
+        <p>Analiza álbumes y comparte tus playlists favoritas.</p>
+        <a href="#" class="btn btn-success">Explorar</a>
       </div>
     </div>
   </div>
 
+  <!-- CLUB PODCAST -->
   <div class="span4">
-    <div class="box flyRight">
-      <div class="icon">
-        <i class="ico icon-circled icon-bgdark icon-microphone active icon-3x"></i>
-      </div>
-      <div class="text">
-        <h4>Club de <strong>Podcast</strong></h4>
-        <p>Escucha, comenta y participa en debates.</p>
-        <a href="#">Escuchar sesiones</a>
+    <div class="card-club">
+      <img src="img/CPodcast.png" alt="Club podcast">
+      <div class="card-content">
+        <h4>Club de Podcast</h4>
+        <p>Escucha, debate y participa en conversaciones reales.</p>
+        <a href="#" class="btn btn-success">Escuchar</a>
       </div>
     </div>
   </div>
@@ -271,7 +272,7 @@
       </div>
 
       <div class="pricing-terms">
-        <h6>19,90€ / mes</h6>
+        <h4 class="price">19,90€ / mes</h4>
       </div>
 
       <div class="pricing-content">
@@ -299,10 +300,12 @@
 
     
 
-    <footer>
+    
+  </div>
+  <footer>
       <div class="container">
         <div class="row">
-          <div class="span4">
+          <div class="span12">
             <div class="widget">
               <h5 class="widgetheading">Enlaces</h5>
 <ul class="link-list">
@@ -369,7 +372,6 @@ Recibe novedades sobre nuevos clubes, sesiones y contenido exclusivo.           
         </div>
       </div>
     </footer>
-  </div>
   <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
 
   <!-- javascript
@@ -396,6 +398,11 @@ Recibe novedades sobre nuevos clubes, sesiones y contenido exclusivo.           
 
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
+<script>
 
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 </body>
 </html>
