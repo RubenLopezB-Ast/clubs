@@ -2768,4 +2768,168 @@ ul.the-icons {
   background: url(../img/bodybg/bg10.png) repeat left top;
 }
 
-/* Theme Styler :: End */
+/* ===== RESPONSIVE MÓVIL ===== */
+@media (max-width: 768px) {
+
+  /* Contenedor general */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Columnas → una debajo de otra */
+  .row [class*="span"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  /* Quitar offset raro */
+  .offset4 {
+    margin-left: 0 !important;
+  }
+
+  /* Títulos */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Botones */
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Slider texto */
+  .camera_caption {
+    text-align: center;
+  }
+
+  /* Ocultar cosas que sobran en móvil */
+  .top {
+    display: none;
+  }
+
+  /* Cajas (clubes) */
+  .box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Pricing */
+  .pricing-box-wrap {
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  footer .span4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #featured {
+    display: none;
+  }
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+#wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.box, .pricing-box-wrap {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
+/* ===== MODO MÓVIL ===== */
+@media (max-width: 768px) {
+
+  /* Quitar barra superior */
+  .top {
+    display: none;
+  }
+
+  /* Columnas en vertical */
+  .row [class*="span"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  /* Quitar offsets */
+  .offset4 {
+    margin-left: 0 !important;
+  }
+
+  /* Títulos más pequeños */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Botones grandes (modo app) */
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Cajas (clubes) */
+  .box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Tarjeta suscripción */
+  .pricing-box-wrap {
+    margin-top: 20px;
+  }
+
+  /* Footer limpio */
+  footer .span4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #featured {
+    display: none;
+  }
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+#wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.box, .pricing-box-wrap {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
