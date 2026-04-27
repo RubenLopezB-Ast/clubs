@@ -3579,3 +3579,57 @@ footer {
   text-align: left;
 }
 
+
+/* ===== FIX MÓVIL TARJETA SUSCRIPCIÓN ===== */
+@media (max-width: 768px) {
+
+  .pricing-box-wrap {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center; /* volvemos al estilo app */
+  }
+
+  .pricing-box-wrap h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .pricing-box-wrap p {
+    text-align: center;
+  }
+
+  .price {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .pricing-box-wrap .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .pricing-box-wrap {
+    border-radius: 20px;
+  }
+
+}
+
+/* ===== CLUBES EN MÓVIL (UNO DEBAJO DE OTRO) ===== */
+@media (max-width: 768px) {
+
+  #clubes {
+    display: block !important;
+  }
+
+  #clubes .span4 {
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 20px;
+  }
+
+}
